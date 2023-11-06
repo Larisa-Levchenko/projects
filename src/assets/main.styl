@@ -1,0 +1,77 @@
+@import './reset.styl';
+@import './components/*';
+
+:root {
+  --color-background: #20212C;
+  --color-font-main: #EFF3FF;
+  --color-active: #2D76F9;
+  --color-grey: #9AA8BA;
+  --color-error: #E83B3B;
+  --color-success: #8FD97D;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background: var(--color-background);
+  overflow-x: hidden;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  position: relative;
+  transition: text-decoration 0.3s ease-out;
+
+  &:hover {
+    text-decoration: underline var(--color-active);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey);
+  border: none;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-grey);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-grey);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-font-main);
+  border: none;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: var(--color-font-main);
+}
+
+::-webkit-scrollbar-track:active {
+  background: var(--color-font-main);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
